@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/wieslawsoltes/ProDataGrid/new/master/apiSpec/new?filename=Avalonia_Controls_DataGridFiltering_DataGridColumnFilter.md&amp;value=---%0Auid%3A%20Avalonia.Controls.DataGridFiltering.DataGridColumnFilter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/workgroupengineering/ProDataGrid/new/master/apiSpec/new?filename=Avalonia_Controls_DataGridFiltering_DataGridColumnFilter.md&amp;value=---%0Auid%3A%20Avalonia.Controls.DataGridFiltering.DataGridColumnFilter%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -85,7 +85,7 @@
 
 
   <h1 id="Avalonia_Controls_DataGridFiltering_DataGridColumnFilter" data-uid="Avalonia.Controls.DataGridFiltering.DataGridColumnFilter" class="text-break">
-Class DataGridColumnFilter  <a class="header-action link-secondary" title="View source" href="https://github.com/wieslawsoltes/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L14"><i class="bi bi-code-slash"></i></a>
+Class DataGridColumnFilter  <a class="header-action link-secondary" title="View source" href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -152,7 +152,7 @@ Class DataGridColumnFilter  <a class="header-action link-secondary" title="View 
 
   <h3 id="Avalonia_Controls_DataGridFiltering_DataGridColumnFilter_PredicateFactoryProperty" data-uid="Avalonia.Controls.DataGridFiltering.DataGridColumnFilter.PredicateFactoryProperty">
   PredicateFactoryProperty
-  <a class="header-action link-secondary" title="View source" href="https://github.com/wieslawsoltes/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Allows a column to supply a predicate factory for descriptors targeting that column.</p>
@@ -180,6 +180,37 @@ Class DataGridColumnFilter  <a class="header-action link-secondary" title="View 
 
 
 
+
+  <h3 id="Avalonia_Controls_DataGridFiltering_DataGridColumnFilter_ValueAccessorProperty" data-uid="Avalonia.Controls.DataGridFiltering.DataGridColumnFilter.ValueAccessorProperty">
+  ValueAccessorProperty
+  <a class="header-action link-secondary" title="View source" href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows a column to supply a value accessor for filtering predicates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly AttachedProperty&lt;IDataGridColumnValueAccessor?&gt; ValueAccessorProperty</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AttachedProperty</span>&lt;<a class="xref" href="Avalonia.Controls.IDataGridColumnValueAccessor.html">IDataGridColumnValueAccessor</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -188,7 +219,7 @@ Class DataGridColumnFilter  <a class="header-action link-secondary" title="View 
 
   <h3 id="Avalonia_Controls_DataGridFiltering_DataGridColumnFilter_GetPredicateFactory_Avalonia_AvaloniaObject_" data-uid="Avalonia.Controls.DataGridFiltering.DataGridColumnFilter.GetPredicateFactory(Avalonia.AvaloniaObject)">
   GetPredicateFactory(AvaloniaObject)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/wieslawsoltes/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -220,11 +251,47 @@ Class DataGridColumnFilter  <a class="header-action link-secondary" title="View 
 
 
 
+  <a id="Avalonia_Controls_DataGridFiltering_DataGridColumnFilter_GetValueAccessor_" data-uid="Avalonia.Controls.DataGridFiltering.DataGridColumnFilter.GetValueAccessor*"></a>
+
+  <h3 id="Avalonia_Controls_DataGridFiltering_DataGridColumnFilter_GetValueAccessor_Avalonia_AvaloniaObject_" data-uid="Avalonia.Controls.DataGridFiltering.DataGridColumnFilter.GetValueAccessor(Avalonia.AvaloniaObject)">
+  GetValueAccessor(AvaloniaObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDataGridColumnValueAccessor? GetValueAccessor(AvaloniaObject target)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">AvaloniaObject</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Avalonia.Controls.IDataGridColumnValueAccessor.html">IDataGridColumnValueAccessor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Avalonia_Controls_DataGridFiltering_DataGridColumnFilter_SetPredicateFactory_" data-uid="Avalonia.Controls.DataGridFiltering.DataGridColumnFilter.SetPredicateFactory*"></a>
 
   <h3 id="Avalonia_Controls_DataGridFiltering_DataGridColumnFilter_SetPredicateFactory_Avalonia_AvaloniaObject_System_Func_Avalonia_Controls_DataGridFiltering_FilteringDescriptor_System_Func_System_Object_System_Boolean___" data-uid="Avalonia.Controls.DataGridFiltering.DataGridColumnFilter.SetPredicateFactory(Avalonia.AvaloniaObject,System.Func{Avalonia.Controls.DataGridFiltering.FilteringDescriptor,System.Func{System.Object,System.Boolean}})">
   SetPredicateFactory(AvaloniaObject, Func&lt;FilteringDescriptor, Func&lt;object, bool&gt;&gt;?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/wieslawsoltes/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L36"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -253,11 +320,44 @@ Class DataGridColumnFilter  <a class="header-action link-secondary" title="View 
 
 
 
+  <a id="Avalonia_Controls_DataGridFiltering_DataGridColumnFilter_SetValueAccessor_" data-uid="Avalonia.Controls.DataGridFiltering.DataGridColumnFilter.SetValueAccessor*"></a>
+
+  <h3 id="Avalonia_Controls_DataGridFiltering_DataGridColumnFilter_SetValueAccessor_Avalonia_AvaloniaObject_Avalonia_Controls_IDataGridColumnValueAccessor_" data-uid="Avalonia.Controls.DataGridFiltering.DataGridColumnFilter.SetValueAccessor(Avalonia.AvaloniaObject,Avalonia.Controls.IDataGridColumnValueAccessor)">
+  SetValueAccessor(AvaloniaObject, IDataGridColumnValueAccessor?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetValueAccessor(AvaloniaObject target, IDataGridColumnValueAccessor? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>target</code> <span class="xref">AvaloniaObject</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Avalonia.Controls.IDataGridColumnValueAccessor.html">IDataGridColumnValueAccessor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/wieslawsoltes/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L14" class="edit-link">Edit this page</a>
+          <a href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/Filtering/DataGridColumnFilter.cs/#L14" class="edit-link">Edit this page</a>
         </div>
 
 
