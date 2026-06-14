@@ -1628,6 +1628,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Controls.DataGridDragDrop.DataGridRowDragSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Controls.DataGridDragDrop.DataGridRowDragSession.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Controls.DataGridDragDrop.DataGridRowDragSession",
+      "Summary": "<p sourcefile=\"api/Avalonia.Controls.DataGridDragDrop.DataGridRowDragSession.yml\" sourcestartlinenumber=\"1\">Represents the live state of an active row drag operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Avalonia.Controls.DataGridDragDrop.DataGridRowDropEventArgs.yml",
       "output": {
         ".html": {
@@ -4372,6 +4386,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Controls.DataGridRowDragCanceledEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Controls.DataGridRowDragCanceledEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Controls.DataGridRowDragCanceledEventArgs",
+      "Summary": "<p sourcefile=\"api/Avalonia.Controls.DataGridRowDragCanceledEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"Avalonia.Controls.DataGrid.RowDragCanceled\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Avalonia.Controls.DataGridRowDragCompletedEventArgs.yml",
       "output": {
         ".html": {
@@ -4386,6 +4414,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Controls.DataGridRowDragStartedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Controls.DataGridRowDragStartedEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Controls.DataGridRowDragStartedEventArgs",
+      "Summary": "<p sourcefile=\"api/Avalonia.Controls.DataGridRowDragStartedEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"Avalonia.Controls.DataGrid.RowDragStarted\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Avalonia.Controls.DataGridRowDragStartingEventArgs.yml",
       "output": {
         ".html": {
@@ -4397,6 +4439,20 @@
       "IsMRef": true,
       "Title": "Avalonia.Controls.DataGridRowDragStartingEventArgs",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Controls.DataGridRowDragUpdatedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Controls.DataGridRowDragUpdatedEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Controls.DataGridRowDragUpdatedEventArgs",
+      "Summary": "<p sourcefile=\"api/Avalonia.Controls.DataGridRowDragUpdatedEventArgs.yml\" sourcestartlinenumber=\"1\">Provides data for the <xref href=\"Avalonia.Controls.DataGrid.RowDragUpdated\" data-throw-if-not-resolved=\"false\"></xref> event.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -4873,6 +4929,20 @@
       "IsMRef": true,
       "Title": "Avalonia.Controls.DataGridSelection.IDataGridSelectionModelFactory",
       "Summary": "<p sourcefile=\"api/Avalonia.Controls.DataGridSelection.IDataGridSelectionModelFactory.yml\" sourcestartlinenumber=\"1\">Factory hook for creating selection models used by the DataGrid.\nImplementations can provide custom selection behavior.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Controls.DataGridSelection.IdentitySelectionModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Controls.DataGridSelection.IdentitySelectionModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Controls.DataGridSelection.IdentitySelectionModel",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -6164,6 +6234,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Diagnostics.DevToolsPropertyEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Diagnostics.DevToolsPropertyEdit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Diagnostics.DevToolsPropertyEdit",
+      "Summary": "<p sourcefile=\"api/Avalonia.Diagnostics.DevToolsPropertyEdit.yml\" sourcestartlinenumber=\"1\">Describes a committed DevTools property editor change.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Diagnostics.DevToolsResourceReferenceKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Diagnostics.DevToolsResourceReferenceKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Diagnostics.DevToolsResourceReferenceKind",
+      "Summary": "<p sourcefile=\"api/Avalonia.Diagnostics.DevToolsResourceReferenceKind.yml\" sourcestartlinenumber=\"1\">Describes whether a committed DevTools property edit used a XAML resource reference.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Diagnostics.DevToolsSegmentView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Diagnostics.DevToolsSegmentView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Diagnostics.DevToolsSegmentView",
+      "Summary": "<p sourcefile=\"api/Avalonia.Diagnostics.DevToolsSegmentView.yml\" sourcestartlinenumber=\"1\">Hosts one standalone segment of a logical, visual, or combined diagnostics tree page.\nMultiple segment views can share one <xref href=\"Avalonia.Diagnostics.DevToolsSession\" data-throw-if-not-resolved=\"false\"></xref> so tree selection\ndrives the properties and layout/style analyzer panels.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Diagnostics.DevToolsSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Diagnostics.DevToolsSession.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Diagnostics.DevToolsSession",
+      "Summary": "<p sourcefile=\"api/Avalonia.Diagnostics.DevToolsSession.yml\" sourcestartlinenumber=\"1\">Owns diagnostics state that can be shared by multiple standalone diagnostics segment views.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Diagnostics.DevToolsTreeSegmentKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Diagnostics.DevToolsTreeSegmentKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Diagnostics.DevToolsTreeSegmentKind",
+      "Summary": "<p sourcefile=\"api/Avalonia.Diagnostics.DevToolsTreeSegmentKind.yml\" sourcestartlinenumber=\"1\">Selects which tree diagnostics segment a standalone diagnostics view should host.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Diagnostics.DevToolsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Diagnostics.DevToolsView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Diagnostics.DevToolsView",
+      "Summary": "<p sourcefile=\"api/Avalonia.Diagnostics.DevToolsView.yml\" sourcestartlinenumber=\"1\">Hosts the Avalonia diagnostics tools inside an existing view.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Avalonia.Diagnostics.DevToolsViewKind.yml",
       "output": {
         ".html": {
@@ -6189,6 +6343,20 @@
       "IsMRef": true,
       "Title": "Avalonia.Diagnostics.HotKeyConfiguration",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Diagnostics.IDevToolsPropertyEditHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Diagnostics.IDevToolsPropertyEditHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Diagnostics.IDevToolsPropertyEditHandler",
+      "Summary": "<p sourcefile=\"api/Avalonia.Diagnostics.IDevToolsPropertyEditHandler.yml\" sourcestartlinenumber=\"1\">Receives committed property edits made by DevTools property editors.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -6244,6 +6412,76 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Avalonia.Diagnostics.Screenshots",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Diagnostics.Views.ControlLayoutStylesView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Diagnostics.Views.ControlLayoutStylesView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Diagnostics.Views.ControlLayoutStylesView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Diagnostics.Views.ControlPropertiesView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Diagnostics.Views.ControlPropertiesView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Diagnostics.Views.ControlPropertiesView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Diagnostics.Views.DevToolsStatusBarView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Diagnostics.Views.DevToolsStatusBarView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Diagnostics.Views.DevToolsStatusBarView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Diagnostics.Views.TreePageTreeView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Diagnostics.Views.TreePageTreeView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Diagnostics.Views.TreePageTreeView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avalonia.Diagnostics.Views.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avalonia.Diagnostics.Views.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Avalonia.Diagnostics.Views",
       "Summary": null
     },
     {
@@ -6402,6 +6640,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartCrosshairMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartCrosshairMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartCrosshairMode",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartCrosshairMode.yml\" sourcestartlinenumber=\"1\">Determines which guide lines are rendered for the active crosshair overlay.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProCharts.ChartDataDelta.yml",
       "output": {
         ".html": {
@@ -6542,6 +6794,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartInteractionState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartInteractionState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartInteractionState",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartInteractionState.yml\" sourcestartlinenumber=\"1\">Represents transient chart interaction state such as visible crosshair position\nand whether the window should remain pinned to the latest categories.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProCharts.ChartLegendDefinition.yml",
       "output": {
         ".html": {
@@ -6626,6 +6892,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartPointerTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartPointerTool.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartPointerTool",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartPointerTool.yml\" sourcestartlinenumber=\"1\">Selects the primary pointer workflow for interactive chart hosts.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProCharts.ChartSeriesKind.yml",
       "output": {
         ".html": {
@@ -6707,6 +6987,34 @@
       "IsMRef": true,
       "Title": "ProCharts.ChartValueAxisAssignment",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartValueFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartValueFormat.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartValueFormat",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartValueFormat.yml\" sourcestartlinenumber=\"1\">Defines numeric display formatting for chart values when a custom formatter delegate is not supplied.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartValueFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartValueFormatter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartValueFormatter",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartValueFormatter.yml\" sourcestartlinenumber=\"1\">Formats numeric chart values using <xref href=\"ProCharts.ChartValueFormat\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -9507,6 +9815,16 @@
       "output": {
         ".html": {
           "relative_path": "articles/row-details-and-templates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/row-drag-sessions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/row-drag-sessions.html"
         }
       },
       "version": ""

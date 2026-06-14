@@ -96,6 +96,28 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="Avalonia.Diagnostics.DevToolsPropertyEdit.html">DevToolsPropertyEdit</a></dt>
+      <dd><p>Describes a committed DevTools property editor change.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Avalonia.Diagnostics.DevToolsSegmentView.html">DevToolsSegmentView</a></dt>
+      <dd><p>Hosts one standalone segment of a logical, visual, or combined diagnostics tree page.
+Multiple segment views can share one <a class="xref" href="Avalonia.Diagnostics.DevToolsSession.html">DevToolsSession</a> so tree selection
+drives the properties and layout/style analyzer panels.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Avalonia.Diagnostics.DevToolsSession.html">DevToolsSession</a></dt>
+      <dd><p>Owns diagnostics state that can be shared by multiple standalone diagnostics segment views.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Avalonia.Diagnostics.DevToolsView.html">DevToolsView</a></dt>
+      <dd><p>Hosts the Avalonia diagnostics tools inside an existing view.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Avalonia.Diagnostics.HotKeyConfiguration.html">HotKeyConfiguration</a></dt>
       <dd></dd>
     </dl>
@@ -107,6 +129,11 @@ Classes
 Interfaces
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="Avalonia.Diagnostics.IDevToolsPropertyEditHandler.html">IDevToolsPropertyEditHandler</a></dt>
+      <dd><p>Receives committed property edits made by DevTools property editors.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="Avalonia.Diagnostics.IScreenshotHandler.html">IScreenshotHandler</a></dt>
       <dd><p>Allowed to define custom handler for Shreeshot</p>
 </dd>
@@ -114,6 +141,16 @@ Interfaces
     <h3 id="enums">
 Enums
 </h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Avalonia.Diagnostics.DevToolsResourceReferenceKind.html">DevToolsResourceReferenceKind</a></dt>
+      <dd><p>Describes whether a committed DevTools property edit used a XAML resource reference.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="Avalonia.Diagnostics.DevToolsTreeSegmentKind.html">DevToolsTreeSegmentKind</a></dt>
+      <dd><p>Selects which tree diagnostics segment a standalone diagnostics view should host.</p>
+</dd>
+    </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="Avalonia.Diagnostics.DevToolsViewKind.html">DevToolsViewKind</a></dt>
       <dd><p>Kinds of diagnostic views available in DevTools</p>
