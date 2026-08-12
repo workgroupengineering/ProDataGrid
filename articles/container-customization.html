@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Container customization | ProDataGrid for Avalonia </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Container customization | ProDataGrid for Avalonia ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/workgroupengineering/ProDataGrid/blob/master/docfx/articles/container-customization.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="container-customization">Container customization</h1>
+
+<p>ProDataGrid owns and recycles its row and cell containers. Customize their appearance,
+content, behavior, and lifecycle through the supported extension points below.</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Supported extension point</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Change row or cell appearance and visual states</td>
+<td><code>RowTheme</code>, <code>CellTheme</code>, column <code>CellTheme</code>, styles, and control themes</td>
+</tr>
+<tr>
+<td>Supply arbitrary display or editor content</td>
+<td><code>DataGridTemplateColumn</code>, <code>CellTemplate</code>, and <code>CellEditingTemplate</code></td>
+</tr>
+<tr>
+<td>Reuse an expensive templated visual while rows recycle</td>
+<td><code>DataGridTemplateColumn.ReuseCellContent</code> or <code>IRecyclingDataTemplate</code></td>
+</tr>
+<tr>
+<td>Implement a new column and editor contract</td>
+<td>Derive from <code>DataGridColumn</code> or <code>DataGridBoundColumn</code></td>
+</tr>
+<tr>
+<td>Attach and clear per-realization integration state</td>
+<td><code>CellPrepared</code>, <code>CellClearing</code>, <code>LoadingRow</code>, and <code>UnloadingRow</code></td>
+</tr>
+<tr>
+<td>Render a display value without a nested retained display control</td>
+<td>supported drawn display mode or <code>DataGridCustomDrawingColumn</code></td>
+</tr>
+<tr>
+<td>Observe or veto grid state transitions</td>
+<td>editing, committed-value, and transactional selection events</td>
+</tr>
+<tr>
+<td>Replace the outer virtualized containers</td>
+<td><code>DataGrid.RealizationFactory</code></td>
+</tr>
+</tbody>
+</table>
+<p>Prefer themes, templates, and columns when they can express the customization. A
+realization factory is the lower-level migration hook for applications that require
+<code>DataGridRow</code>, <code>DataGridCell</code>, or <code>DataGridColumnHeader</code> subclasses.</p>
+<h2 id="container-ownership">Container ownership</h2>
+<p><code>DataGridRealizationFactory</code> replaces only the outer containers. The grid still owns
+their lifetime, preparation, layout, selection, editing, validation, automation, and
+recycling. Columns still own display content, editors, values, sorting, filtering,
+search, grouping, clipboard/export data, and persistence semantics. Never derive a
+semantic value from a realized cell: virtualization means most cells do not exist.</p>
+<p>The request contexts expose:</p>
+<ul>
+<li>the owning grid;</li>
+<li>the row data context and normalized application item;</li>
+<li>the <code>HierarchicalNode</code>, flattened row index, and slot when applicable;</li>
+<li>the owning row and column for cells; and</li>
+<li>left/right frozen-region state for column headers.</li>
+</ul>
+<p>Call <code>CreateDefaultContainer()</code> from a context when a request does not need a custom
+container. The grid performs the normal preparation after the factory returns it.</p>
+<h2 id="recycling-keys">Recycling keys</h2>
+<p>Each container kind has a data-side key overload and an element-side key overload.
+Return equal, stable keys only when the existing element is compatible with the new
+request. The grid keeps row pools partitioned by key, rebuilds incompatible cells on
+a recycled row, and replaces an incompatible cached header. Return <code>null</code> on either
+side to disable reuse for that request or element.</p>
+<p>The shared <code>DataGridRealizationFactory.Default</code> keeps the legacy fast path. Assigning
+a different factory clears old pools and regenerates realized rows, cells, and headers,
+so containers from different factories cannot mix. Replacing a factory also ends an
+active edit through the grid's normal commit-or-cancel path.</p>
+<h2 id="example">Example</h2>
+<p>The following factory alternates row and cell subclasses by application item. The
+subclasses reuse the built-in themes through <code>StyleKeyOverride</code>; an application can
+instead provide dedicated control themes for its custom types.</p>
+<pre><code class="lang-csharp">public sealed record OrderRow(int Id);
+
+public sealed class EvenOrderRow : DataGridRow
+{
+    protected override Type StyleKeyOverride =&gt; typeof(DataGridRow);
+}
+
+public sealed class OddOrderRow : DataGridRow
+{
+    protected override Type StyleKeyOverride =&gt; typeof(DataGridRow);
+}
+
+public sealed class EvenOrderCell : DataGridCell
+{
+    protected override Type StyleKeyOverride =&gt; typeof(DataGridCell);
+}
+
+public sealed class OddOrderCell : DataGridCell
+{
+    protected override Type StyleKeyOverride =&gt; typeof(DataGridCell);
+}
+
+public sealed class OrderRealizationFactory : DataGridRealizationFactory
+{
+    public override DataGridRow CreateRow(DataGridRowRealizationContext context) =&gt;
+        IsEven(context.Item) ? new EvenOrderRow() : new OddOrderRow();
+
+    public override object? GetRowRecyclingKey(DataGridRowRealizationContext context) =&gt;
+        IsEven(context.Item) ? typeof(EvenOrderRow) : typeof(OddOrderRow);
+
+    public override object? GetRowRecyclingKey(DataGridRow row) =&gt; row.GetType();
+
+    public override DataGridCell CreateCell(DataGridCellRealizationContext context) =&gt;
+        IsEven(context.Item) ? new EvenOrderCell() : new OddOrderCell();
+
+    public override object? GetCellRecyclingKey(DataGridCellRealizationContext context) =&gt;
+        IsEven(context.Item) ? typeof(EvenOrderCell) : typeof(OddOrderCell);
+
+    public override object? GetCellRecyclingKey(DataGridCell cell) =&gt; cell.GetType();
+
+    private static bool IsEven(object? item) =&gt; item is OrderRow row &amp;&amp; (row.Id &amp; 1) == 0;
+}
+</code></pre>
+<p>Register the factory as a resource rather than constructing it in view code-behind:</p>
+<pre><code class="lang-xml">&lt;Window.Resources&gt;
+  &lt;local:OrderRealizationFactory x:Key=&quot;OrderRealizationFactory&quot; /&gt;
+&lt;/Window.Resources&gt;
+
+&lt;DataGrid RealizationFactory=&quot;{StaticResource OrderRealizationFactory}&quot; /&gt;
+</code></pre>
+<p>Items that are already <code>DataGridRow</code> containers keep the existing own-container
+behavior and do not require a factory-created row.</p>
+<h2 id="compatibility">Compatibility</h2>
+<p>No existing customization API changes. <code>DataGridRealizationFactory.Default</code>, existing
+themes and templates, and column-selected direct/drawn display paths remain the
+compatibility default.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/workgroupengineering/ProDataGrid/blob/master/docfx/articles/container-customization.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
