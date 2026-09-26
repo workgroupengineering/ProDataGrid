@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Interface IDataGridColumnTextAccessor | ProDataGrid for Avalonia </title>
+      <title>Enum DataGridVisualLayoutMode | ProDataGrid for Avalonia </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Interface IDataGridColumnTextAccessor | ProDataGrid for Avalonia ">
+      <meta name="title" content="Enum DataGridVisualLayoutMode | ProDataGrid for Avalonia ">
       
-      
+      <meta name="description" content="Selects how realized rows and cells are attached to the grid visual tree.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/workgroupengineering/ProDataGrid/new/master/apiSpec/new?filename=Avalonia_Controls_IDataGridColumnTextAccessor.md&amp;value=---%0Auid%3A%20Avalonia.Controls.IDataGridColumnTextAccessor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/workgroupengineering/ProDataGrid/new/master/apiSpec/new?filename=Avalonia_Controls_DataGridVisualLayoutMode.md&amp;value=---%0Auid%3A%20Avalonia.Controls.DataGridVisualLayoutMode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -80,12 +80,13 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Avalonia.Controls.IDataGridColumnTextAccessor">
+        <article data-uid="Avalonia.Controls.DataGridVisualLayoutMode">
 
 
 
-  <h1 id="Avalonia_Controls_IDataGridColumnTextAccessor" data-uid="Avalonia.Controls.IDataGridColumnTextAccessor" class="text-break">
-Interface IDataGridColumnTextAccessor  <a class="header-action link-secondary" title="View source" href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/ColumnDefinitions/DataGridColumnValueAccessor.cs/#L49"><i class="bi bi-code-slash"></i></a>
+
+  <h1 id="Avalonia_Controls_DataGridVisualLayoutMode" data-uid="Avalonia.Controls.DataGridVisualLayoutMode" class="text-break">
+Enum DataGridVisualLayoutMode  <a class="header-action link-secondary" title="View source" href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/DataGridVisualLayoutMode.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -93,11 +94,12 @@ Interface IDataGridColumnTextAccessor  <a class="header-action link-secondary" t
   <dl><dt>Assembly</dt><dd>Avalonia.Controls.DataGrid.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Selects how realized rows and cells are attached to the grid visual tree.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IDataGridColumnTextAccessor</code></pre>
+    <pre><code class="lang-csharp hljs">public enum DataGridVisualLayoutMode</code></pre>
   </div>
 
 
@@ -108,67 +110,32 @@ Interface IDataGridColumnTextAccessor  <a class="header-action link-secondary" t
 
 
 
-
-
-
-
-  <h2 class="section" id="methods">Methods
+  <h2 id="fields">Fields
 </h2>
-
-
-  <a id="Avalonia_Controls_IDataGridColumnTextAccessor_TryGetText_" data-uid="Avalonia.Controls.IDataGridColumnTextAccessor.TryGetText*"></a>
-
-  <h3 id="Avalonia_Controls_IDataGridColumnTextAccessor_TryGetText_System_Object_Avalonia_Data_Converters_IValueConverter_System_Object_System_String_System_Globalization_CultureInfo_System_IFormatProvider_System_String__" data-uid="Avalonia.Controls.IDataGridColumnTextAccessor.TryGetText(System.Object,Avalonia.Data.Converters.IValueConverter,System.Object,System.String,System.Globalization.CultureInfo,System.IFormatProvider,System.String@)">
-  TryGetText(object, IValueConverter, object, string, CultureInfo, IFormatProvider, out string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/ColumnDefinitions/DataGridColumnValueAccessor.cs/#L55"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool TryGetText(object item, IValueConverter converter, object converterParameter, string stringFormat, CultureInfo culture, IFormatProvider formatProvider, out string text)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>item</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
-    <dt><code>converter</code> <span class="xref">IValueConverter</span></dt>
-    <dd></dd>
-    <dt><code>converterParameter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd></dd>
-    <dt><code>stringFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-    <dt><code>culture</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo">CultureInfo</a></dt>
-    <dd></dd>
-    <dt><code>formatProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></dt>
-    <dd></dd>
-    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dt id="Avalonia_Controls_DataGridVisualLayoutMode_Flat"><code>Flat = 1</code></dt>
+  
+  <dd><p>Attaches realized rows and cells as siblings under one rows presenter and computes
+their pixel bounds in a single layout pass.</p>
+</dd>
+    <dt id="Avalonia_Controls_DataGridVisualLayoutMode_Nested"><code>Nested = 0</code></dt>
+  
+  <dd><p>Uses the compatibility layout where each row owns a nested cells presenter.</p>
+</dd>
+    <dt id="Avalonia_Controls_DataGridVisualLayoutMode_Virtualized"><code>Virtualized = 2</code></dt>
+  
+  <dd><p>Draws realized display cells on a single virtual surface instead of creating a
+retained <a class="xref" href="Avalonia.Controls.DataGridCell.html">DataGridCell</a> control for every visible row and column.
+Interactive editors and unsupported control templates are materialized on demand.</p>
+</dd>
   </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
 
 
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/ColumnDefinitions/DataGridColumnValueAccessor.cs/#L49" class="edit-link">Edit this page</a>
+          <a href="https://github.com/workgroupengineering/ProDataGrid/blob/master/src/Avalonia.Controls.DataGrid/DataGridVisualLayoutMode.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 
