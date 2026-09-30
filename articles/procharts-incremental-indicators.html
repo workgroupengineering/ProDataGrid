@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Incremental chart indicators | ProDataGrid for Avalonia </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Incremental chart indicators | ProDataGrid for Avalonia ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/workgroupengineering/ProDataGrid/blob/master/docfx/articles/procharts-incremental-indicators.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="incremental-chart-indicators">Incremental chart indicators</h1>
+
+<p><code>ChartIndicators</code> analyzes complete batches. Persistent calculators instead consume observations through <code>IStreamingChartIndicator&lt;TInput,TOutput&gt;</code>: <code>Push</code>, <code>Current</code>, <code>SamplesProcessed</code> and <code>Reset</code>. Construction allocates state; Push/Reset do not allocate managed objects. Snapshot construction, application subscribers, labels and rendering remain separate costs.</p>
+<h2 id="available-calculators">Available calculators</h2>
+<table>
+<thead>
+<tr>
+<th>Calculator</th>
+<th>Result and warmup</th>
+<th>Retained state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StreamingExponentialMovingAverage</td>
+<td>Full-period SMA seed, then alpha 2/(period+1)</td>
+<td>Constant space</td>
+</tr>
+<tr>
+<td>StreamingRelativeStrengthIndex</td>
+<td>Wilder RSI after period price changes; flat/gain/loss conventions 50/100/0</td>
+<td>Constant space</td>
+</tr>
+<tr>
+<td>StreamingMacd</td>
+<td>SMA-seeded fast/slow EMA difference, signal and histogram</td>
+<td>Constant space</td>
+</tr>
+<tr>
+<td>StreamingAverageTrueRange</td>
+<td>First high-low included in period seed; preceding close/Wilder updates afterward</td>
+<td>Constant space</td>
+</tr>
+<tr>
+<td>StreamingRollingStatistics</td>
+<td>SMA, linear WMA, population/sample deviations after a full finite window</td>
+<td>O(period)</td>
+</tr>
+<tr>
+<td>StreamingSimpleMovingAverage</td>
+<td>Arithmetic mean of the last period finite observations</td>
+<td>O(period)</td>
+</tr>
+<tr>
+<td>StreamingWeightedMovingAverage</td>
+<td>Chronological weights 1 through period</td>
+<td>O(period)</td>
+</tr>
+<tr>
+<td>StreamingRollingStandardDeviation</td>
+<td>Population divisor period; optional sample divisor period-1</td>
+<td>O(period)</td>
+</tr>
+<tr>
+<td>StreamingBollingerBands</td>
+<td>Rolling SMA plus/minus deviation multiplier</td>
+<td>O(period)</td>
+</tr>
+<tr>
+<td>StreamingDonchianChannels</td>
+<td>Rolling low/high extrema and midpoint, including current bar</td>
+<td>O(period)</td>
+</tr>
+</tbody>
+</table>
+<p>The scalar rolling adapters compose the same combined engine; when several statistics are needed together, use one <code>StreamingRollingStatistics</code> instead of allocating separate windows. Its <code>ChartRollingStatisticsValue</code> exposes Mean, WeightedMean, PopulationStandardDeviation and SampleStandardDeviation. Period one yields the input mean/weighted mean, zero population deviation and null sample deviation. Standalone sample-deviation and sample-Bollinger constructors require period at least two.</p>
+<p>Bollinger and Donchian return immutable <code>ChartBandValue(Lower, Middle, Upper)</code>. Warmup/gap channels are null. Bollinger's default multiplier is two and population deviation is the default. Zero multiplier collapses all boundaries to the mean. Donchian requires finite high, low and close, even though close does not determine its extrema; this matches the batch channel convention. Both ATR and Donchian reject finite inverted high/low pairs before any state/counter change, including when close is missing.</p>
+<h2 id="compose-calculation-with-a-bounded-display-source">Compose calculation with a bounded display source</h2>
+<pre><code class="lang-csharp">var indicator = new StreamingBollingerBands(period: 32, standardDeviations: 2);
+var display = new StreamingRangeChartDataSource(capacity: 10_000, name: &quot;Bollinger 32&quot;);
+var buffer = new ChartRangeSample[64];
+
+// Execute on one serialized ingestion thread. Marshal source/model invalidation to the UI as required.
+// Incoming prices must be chronological and valid for the destination source's increasing-X contract.
+for (int i = 0; i &lt; incomingBatch.Length; i++)
+{
+    ChartSample sample = incomingBatch[i];
+    ChartBandValue band = indicator.Push(sample.Value);
+    buffer[i] = new ChartRangeSample(sample.X, band.Lower, band.Upper, sample.Category);
+}
+display.AppendRange(buffer.AsSpan(0, incomingBatch.Length));
+</code></pre>
+<p>Here <code>incomingBatch</code> is at most 64 observations; size/reuse the buffer to the application's real batch bound. An application's input validation must happen before advancing calculators when the destination can reject data. Calculators and sources are separate components, not one atomic transaction. Display-ring eviction does not reset the calculator. The finite rolling price window and the retained chart-history capacity are independent.</p>
+<p>Use numeric/date/log X positioning with a range source; configure any logarithmic source validity domain to match the renderer. Display decimation occurs <strong>after</strong> every price has been processed by the indicator, never on its input. Thus changing the display budget cannot change the calculated series. None restores full retained display resolution, not prices already discarded by the source. A lower/upper result that becomes a gap follows the source's ordinary paired-gap normalization.</p>
+<p>For a scalar EMA, append <code>new ChartSample(sample.X, indicator.Push(sample.Value), sample.Category)</code> to <code>StreamingChartDataSource</code> instead. UI hosts should batch source notifications; a snapshot per scalar input can erase the benefit of cheap calculator updates.</p>
+<h2 id="input-and-lifecycle-contracts">Input and lifecycle contracts</h2>
+<p>Null or non-finite input consumes one observation, produces a gap and restarts warmup. Reset also clears the counter, which otherwise saturates at long.MaxValue. Previous returned values never change. <code>IsReady</code> on rolling calculators means a complete finite window exists; a genuinely unrepresentable result channel can still be null. The rolling engine retains only the last period consecutive finite inputs, not the entire finite run used by EMA-style recurrences.</p>
+<p>Instances are <strong>single-writer and not thread-safe</strong>. Process source order and serialize access. Correcting/deleting an earlier value or replacing a still-forming bar requires Reset/replay; these calculators do not implicitly revise their previous input. Separate series require separate instances. No dispatcher, timer, network feed, storage archive or multi-series transaction is created.</p>
+<h2 id="numerical-behavior-and-latency-tradeoffs">Numerical behavior and latency tradeoffs</h2>
+<p>EMA/RSI/MACD/ATR retain a local origin with a growing scale and transform constant-size recurrence state when the range grows. Their previous input history is not rescanned. Very different magnitudes can still lose small details.</p>
+<p>Rolling moments use a two-stack aggregate queue in <strong>one capacity-sized array</strong>. Back prefixes and front suffixes each store centered, offset/scaled summaries. Eviction selects the remaining suffix rather than subtracting large nearly equal moments. Once an outlier expires it cannot remain in the current summaries or their scale. The two active summaries are combined in chronological order; weighted ranks shift by the preceding summary's count. Local centered differences preserve small variance around large common offsets, and fused reconstruction reduces intermediate rounding/overflow. This uses binary64, not arbitrary precision, and is not a promise of bitwise equivalence to batch algorithms with different rounding histories.</p>
+<p>Each input enters and transfers at most once: rolling updates are amortized O(1), with O(period) retained numerical storage. <strong>A transfer update can take O(period).</strong> This is not a worst-case constant-latency algorithm. Donchian uses two monotonic queues with the same amortized/worst-case distinction; bounded ring-slot expiry is independent of its lifetime counter. Reset logically clears state without reallocating or clearing numeric-only backing arrays; old numeric storage is not secure-erased.</p>
+<p>The paired centered-moment background is described in <a href="https://www.sandia.gov/research/publications/details/formulas-for-robust-one-pass-parallel-computation-of-covariances-and-arbitr-2008-09-01/">Pébay's Sandia report</a>. The queue, chronological weighted composition and normalized implementation are local code. <a href="https://learn.microsoft.com/dotnet/api/system.math.fusedmultiplyadd">Math.FusedMultiplyAdd</a> reconstructs a product-plus-offset with one final rounding. Extreme mixtures may still lose small details, and genuinely unrepresentable floating-point channels become null. No investment or vendor-complete initialization claim is implied.</p>
+<h2 id="sample-and-reproducible-validation">Sample and reproducible validation</h2>
+<p>Open <strong>ProCharts Range Area → Open bounded live interval demo</strong>, then enable <strong>Calculate rolling Bollinger bands</strong>. Each synthetic price is processed once with period 32; only the resulting intervals enter the bounded display source. Append remains batched, and display-reduction toggling does not replay calculation. Changing calculation mode or deviation width deliberately resets/reseeds the demonstration. Its original supplied-interval mode remains available. All view state/commands remain in the view model with compiled bindings and no added code-behind logic.</p>
+<pre><code class="lang-sh">dotnet test src/Avalonia.Controls.DataGrid.UnitTests/Avalonia.Controls.DataGrid.UnitTests.csproj -c Release -p:CollectCoverage=false --filter FullyQualifiedName~StreamingRollingIndicatorTests
+dotnet run --project tests/ProCharts.Streaming.Benchmarks/ProCharts.Streaming.Benchmarks.csproj -c Release
+</code></pre>
+<p>Regression tests use independent finite-window scans, seeded batch comparisons, transfer boundaries, gap restart, large offsets, expired extreme outliers, subnormal/overflow cases, duplicate extrema, atomic inverted-bar rejection and zero managed allocations. The sample checks full input processing before reduction, bounded-history mapping, single-snapshot batch delivery, reset and real headless toggle routing/native exports.</p>
+<p>The existing benchmark retains its MACD fixtures and adds paired rolling-statistics/Bollinger/Donchian comparisons for periods 32/512. Both paths include initial seeding; the batch alternative recomputes the prefix after every append. This is not a claim that hosts previously used that schedule. Separate diagnostics report constructor allocation and transfer versus following-update latency for large windows. Two warmups and medians of seven runs are diagnostics, not UI latency percentiles or fixed CI thresholds. See the benchmark README for exact inclusion/exclusion rules. No renderer, physical-GPU, presentation or FPS improvement is implied.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/workgroupengineering/ProDataGrid/blob/master/docfx/articles/procharts-incremental-indicators.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

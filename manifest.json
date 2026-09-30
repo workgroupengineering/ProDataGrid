@@ -9188,6 +9188,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.Avalonia.ChartDataSourceDispatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.Avalonia.ChartDataSourceDispatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.Avalonia.ChartDataSourceDispatch",
+      "Summary": "<p sourcefile=\"api/ProCharts.Avalonia.ChartDataSourceDispatch.yml\" sourcestartlinenumber=\"1\">Creates an explicit producer-to-consumer notification boundary for Avalonia chart models.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.Avalonia.ChartHierarchyNavigation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.Avalonia.ChartHierarchyNavigation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.Avalonia.ChartHierarchyNavigation",
+      "Summary": "<p sourcefile=\"api/ProCharts.Avalonia.ChartHierarchyNavigation.yml\" sourcestartlinenumber=\"1\">Opt-in pointer and keyboard navigation for a ProChartView displaying a typed hierarchy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProCharts.Avalonia.ProChartView.yml",
       "output": {
         ".html": {
@@ -9255,6 +9283,34 @@
       "IsMRef": true,
       "Title": "ProCharts.ChartAxisKind",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartBandSeries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartBandSeries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartBandSeries",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartBandSeries.yml\" sourcestartlinenumber=\"1\">Three aligned, independently renderable series describing a lower, middle and upper band.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartBandValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartBandValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartBandValue",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartBandValue.yml\" sourcestartlinenumber=\"1\">An aligned lower/middle/upper result for a streaming band or channel calculator.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -9426,6 +9482,76 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartHierarchyLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartHierarchyLayout.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartHierarchyLayout",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartHierarchyLayout.yml\" sourcestartlinenumber=\"1\">Deterministic, renderer-independent squarified treemap and radial partition layout.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartHierarchyNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartHierarchyNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartHierarchyNode",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartHierarchyNode.yml\" sourcestartlinenumber=\"1\">An immutable weighted hierarchy node. Branch totals are derived from their children.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartHierarchySnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartHierarchySnapshot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartHierarchySnapshot",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartHierarchySnapshot.yml\" sourcestartlinenumber=\"1\">An immutable preorder index of a hierarchy, shared by rendering, navigation and selection.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartHighLowClose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartHighLowClose.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartHighLowClose",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartHighLowClose.yml\" sourcestartlinenumber=\"1\">Aligned high, low and close channels for one observation. Open is not required by ATR or Donchian channels.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartIndicators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartIndicators.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartIndicators",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartIndicators.yml\" sourcestartlinenumber=\"1\">UI-independent, gap-aware statistical and technical chart transforms.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProCharts.ChartInteractionState.yml",
       "output": {
         ".html": {
@@ -9437,6 +9563,20 @@
       "IsMRef": true,
       "Title": "ProCharts.ChartInteractionState",
       "Summary": "<p sourcefile=\"api/ProCharts.ChartInteractionState.yml\" sourcestartlinenumber=\"1\">Represents transient chart interaction state such as visible crosshair position\nand whether the window should remain pinned to the latest categories.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartLayoutRect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartLayoutRect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartLayoutRect",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartLayoutRect.yml\" sourcestartlinenumber=\"1\">A renderer-independent finite rectangle.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -9496,6 +9636,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartMacdSeries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartMacdSeries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartMacdSeries",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartMacdSeries.yml\" sourcestartlinenumber=\"1\">Aligned moving-average convergence/divergence line, signal and histogram series.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartMacdValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartMacdValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartMacdValue",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartMacdValue.yml\" sourcestartlinenumber=\"1\">An aligned MACD observation. Individual channels remain null until their warmup completes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProCharts.ChartMarkerShape.yml",
       "output": {
         ".html": {
@@ -9535,6 +9703,104 @@
       "IsMRef": true,
       "Title": "ProCharts.ChartPointerTool",
       "Summary": "<p sourcefile=\"api/ProCharts.ChartPointerTool.yml\" sourcestartlinenumber=\"1\">Selects the primary pointer workflow for interactive chart hosts.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartRangeDecimator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartRangeDecimator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartRangeDecimator",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartRangeDecimator.yml\" sourcestartlinenumber=\"1\">Selects one shared set of original indices for both boundaries of an interval chart.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartRangeSample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartRangeSample.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartRangeSample",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartRangeSample.yml\" sourcestartlinenumber=\"1\">One interval observation. Streaming sources validate X and normalize incomplete bounds to a gap.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartRangeSeries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartRangeSeries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartRangeSeries",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartRangeSeries.yml\" sourcestartlinenumber=\"1\">Creates owned interval series and converts analytical bands to filled range areas.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartRangeView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartRangeView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartRangeView",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartRangeView.yml\" sourcestartlinenumber=\"1\">An owned display snapshot and its original source-point mapping.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartRollingStatisticsValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartRollingStatisticsValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartRollingStatisticsValue",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartRollingStatisticsValue.yml\" sourcestartlinenumber=\"1\">Aligned statistics for one complete rolling window. Missing results are null, never infinity.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartSample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartSample.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartSample",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartSample.yml\" sourcestartlinenumber=\"1\">A numeric chart sample. A null or non-finite value represents a gap.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartSampleDecimator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartSampleDecimator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartSampleDecimator",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartSampleDecimator.yml\" sourcestartlinenumber=\"1\">Selects original samples without changing their coordinates or bridging missing data.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -9580,6 +9846,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartSunburstSector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartSunburstSector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartSunburstSector",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartSunburstSector.yml\" sourcestartlinenumber=\"1\">A sunburst sector in clockwise degrees, with radii normalized to the outer chart radius.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProCharts.ChartTheme.yml",
       "output": {
         ".html": {
@@ -9591,6 +9871,20 @@
       "IsMRef": true,
       "Title": "ProCharts.ChartTheme",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.ChartTreemapCell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.ChartTreemapCell.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.ChartTreemapCell",
+      "Summary": "<p sourcefile=\"api/ProCharts.ChartTreemapCell.yml\" sourcestartlinenumber=\"1\">A treemap rectangle whose node index is shared with ChartHierarchySnapshot.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -9650,6 +9944,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.CoalescingChartDataSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.CoalescingChartDataSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.CoalescingChartDataSource",
+      "Summary": "<p sourcefile=\"api/ProCharts.CoalescingChartDataSource.yml\" sourcestartlinenumber=\"1\">Coalesces source invalidations and delivers them asynchronously on an explicit synchronization context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.HierarchyChartDataSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.HierarchyChartDataSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.HierarchyChartDataSource",
+      "Summary": "<p sourcefile=\"api/ProCharts.HierarchyChartDataSource.yml\" sourcestartlinenumber=\"1\">A reusable hierarchical data source with stable-ID and hit-index drill-down navigation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProCharts.IChartDataSource.yml",
       "output": {
         ".html": {
@@ -9661,6 +9983,20 @@
       "IsMRef": true,
       "Title": "ProCharts.IChartDataSource",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.IChartHierarchyNavigator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.IChartHierarchyNavigator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.IChartHierarchyNavigator",
+      "Summary": "<p sourcefile=\"api/ProCharts.IChartHierarchyNavigator.yml\" sourcestartlinenumber=\"1\">Renderer-independent navigation contract for sources that display typed hierarchy snapshots.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -9689,6 +10025,48 @@
       "IsMRef": true,
       "Title": "ProCharts.IChartWindowInfoProvider",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.IStreamingChartIndicator-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.IStreamingChartIndicator-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.IStreamingChartIndicator<TInput, TOutput>",
+      "Summary": "<p sourcefile=\"api/ProCharts.IStreamingChartIndicator-2.yml\" sourcestartlinenumber=\"1\">A reusable, single-writer indicator retaining algorithm-specific recurrence or bounded-window state.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.RangeChartDataSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.RangeChartDataSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.RangeChartDataSource",
+      "Summary": "<p sourcefile=\"api/ProCharts.RangeChartDataSource.yml\" sourcestartlinenumber=\"1\">An owned, windowable range-area source with coordinated boundary reduction.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.Skia.SkiaAdvancedChartStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.Skia.SkiaAdvancedChartStyle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.Skia.SkiaAdvancedChartStyle",
+      "Summary": "<p sourcefile=\"api/ProCharts.Skia.SkiaAdvancedChartStyle.yml\" sourcestartlinenumber=\"1\">Immutable presentation options for matrix, hierarchical, and radial-indicator charts.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -9913,6 +10291,230 @@
       "IsMRef": true,
       "Title": "ProCharts.Skia",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingAverageTrueRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingAverageTrueRange.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingAverageTrueRange",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingAverageTrueRange.yml\" sourcestartlinenumber=\"1\">Constant-space Wilder ATR over aligned high/low/close observations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingBollingerBands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingBollingerBands.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingBollingerBands",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingBollingerBands.yml\" sourcestartlinenumber=\"1\">Persistent rolling SMA and symmetric standard-deviation bands, including the current observation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingChartDataSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingChartDataSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingChartDataSource",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingChartDataSource.yml\" sourcestartlinenumber=\"1\">A bounded, thread-safe, single-series data source for live numeric charts.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingChartSeries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingChartSeries.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingChartSeries",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingChartSeries.yml\" sourcestartlinenumber=\"1\">Fixed scalar-series metadata for a synchronized stream.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingDonchianChannels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingDonchianChannels.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingDonchianChannels",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingDonchianChannels.yml\" sourcestartlinenumber=\"1\">Rolling high/low extrema and midpoint, including the current aligned high/low/close observation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingExponentialMovingAverage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingExponentialMovingAverage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingExponentialMovingAverage",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingExponentialMovingAverage.yml\" sourcestartlinenumber=\"1\">An allocation-free, constant-space EMA seeded with a complete-window arithmetic mean.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingMacd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingMacd.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingMacd",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingMacd.yml\" sourcestartlinenumber=\"1\">Constant-space MACD with SMA-seeded fast/slow EMAs, EMA signal and aligned histogram.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingMultiSeriesChartDataSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingMultiSeriesChartDataSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingMultiSeriesChartDataSource",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingMultiSeriesChartDataSource.yml\" sourcestartlinenumber=\"1\">A bounded scalar-series stream that commits all values at an X coordinate as one atomic row.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingMultiSeriesChartView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingMultiSeriesChartView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingMultiSeriesChartView",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingMultiSeriesChartView.yml\" sourcestartlinenumber=\"1\">An owned, aligned multi-series snapshot and common observation identity map.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingRangeChartDataSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingRangeChartDataSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingRangeChartDataSource",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingRangeChartDataSource.yml\" sourcestartlinenumber=\"1\">A bounded, thread-safe range-area stream with atomic batches and coordinated boundary reduction.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingRangeChartView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingRangeChartView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingRangeChartView",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingRangeChartView.yml\" sourcestartlinenumber=\"1\">An owned range snapshot and its immutable stream-identity map, captured under one source lock.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingRelativeStrengthIndex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingRelativeStrengthIndex.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingRelativeStrengthIndex",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingRelativeStrengthIndex.yml\" sourcestartlinenumber=\"1\">Constant-space Wilder RSI requiring period price changes (period+1 prices) for warmup.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingRollingStandardDeviation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingRollingStandardDeviation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingRollingStandardDeviation",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingRollingStandardDeviation.yml\" sourcestartlinenumber=\"1\">Rolling population or sample standard deviation with gap restart and complete-window warmup.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingRollingStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingRollingStatistics.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingRollingStatistics",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingRollingStatistics.yml\" sourcestartlinenumber=\"1\">Bounded rolling arithmetic/weighted means and population/sample deviations in one calculator.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingSimpleMovingAverage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingSimpleMovingAverage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingSimpleMovingAverage",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingSimpleMovingAverage.yml\" sourcestartlinenumber=\"1\">Rolling SMA with complete-window warmup and gap restart.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProCharts.StreamingWeightedMovingAverage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProCharts.StreamingWeightedMovingAverage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProCharts.StreamingWeightedMovingAverage",
+      "Summary": "<p sourcefile=\"api/ProCharts.StreamingWeightedMovingAverage.yml\" sourcestartlinenumber=\"1\">Rolling linearly weighted mean with weights one through Period, oldest to newest.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -10532,6 +11134,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProDataGrid.FormulaEngine.FormulaInvocationExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProDataGrid.FormulaEngine.FormulaInvocationExpression.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProDataGrid.FormulaEngine.FormulaInvocationExpression",
+      "Summary": "<p sourcefile=\"api/ProDataGrid.FormulaEngine.FormulaInvocationExpression.yml\" sourcestartlinenumber=\"1\">A call whose target is a formula value, including a returned lambda.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProDataGrid.FormulaEngine.FormulaLambda.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProDataGrid.FormulaEngine.FormulaLambda.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProDataGrid.FormulaEngine.FormulaLambda",
+      "Summary": "<p sourcefile=\"api/ProDataGrid.FormulaEngine.FormulaLambda.yml\" sourcestartlinenumber=\"1\">An immutable lambda definition and its captured lexical bindings.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProDataGrid.FormulaEngine.FormulaLexicalBindingKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProDataGrid.FormulaEngine.FormulaLexicalBindingKind.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProDataGrid.FormulaEngine.FormulaLexicalBindingKind",
+      "Summary": "<p sourcefile=\"api/ProDataGrid.FormulaEngine.FormulaLexicalBindingKind.yml\" sourcestartlinenumber=\"1\">Describes binding syntax to dependency and volatility analysis.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProDataGrid.FormulaEngine.FormulaLiteralExpression.yml",
       "output": {
         ".html": {
@@ -10840,6 +11484,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProDataGrid.FormulaEngine.FormulaTextCompatibilityVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProDataGrid.FormulaEngine.FormulaTextCompatibilityVersion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProDataGrid.FormulaEngine.FormulaTextCompatibilityVersion",
+      "Summary": "<p sourcefile=\"api/ProDataGrid.FormulaEngine.FormulaTextCompatibilityVersion.yml\" sourcestartlinenumber=\"1\">Controls character positions in the Excel text function family.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProDataGrid.FormulaEngine.FormulaToken.yml",
       "output": {
         ".html": {
@@ -10906,7 +11564,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "ProDataGrid.FormulaEngine.FormulaValue",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/ProDataGrid.FormulaEngine.FormulaValue.yml\" sourcestartlinenumber=\"1\">An immutable tagged value used by formula evaluation and array storage.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -11019,6 +11677,34 @@
       "IsMRef": true,
       "Title": "ProDataGrid.FormulaEngine.IFormulaFunctionRegistry",
       "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProDataGrid.FormulaEngine.IFormulaFunctionRegistryVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProDataGrid.FormulaEngine.IFormulaFunctionRegistryVersion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProDataGrid.FormulaEngine.IFormulaFunctionRegistryVersion",
+      "Summary": "<p sourcefile=\"api/ProDataGrid.FormulaEngine.IFormulaFunctionRegistryVersion.yml\" sourcestartlinenumber=\"1\">Optional revision contract for mutable function registries. Implement this alongside\n<xref href=\"ProDataGrid.FormulaEngine.IFormulaFunctionRegistry\" data-throw-if-not-resolved=\"false\"></xref> to invalidate cached eager/lazy compilation plans.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProDataGrid.FormulaEngine.IFormulaLexicalFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProDataGrid.FormulaEngine.IFormulaLexicalFunction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ProDataGrid.FormulaEngine.IFormulaLexicalFunction",
+      "Summary": "<p sourcefile=\"api/ProDataGrid.FormulaEngine.IFormulaLexicalFunction.yml\" sourcestartlinenumber=\"1\">Optional metadata for functions whose argument syntax introduces lexical names.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -12601,6 +13287,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/procharts-advanced-charts.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/procharts-advanced-charts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/procharts-architecture.md",
       "output": {
         ".html": {
@@ -12661,10 +13357,50 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/procharts-hierarchy-navigation.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/procharts-hierarchy-navigation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/procharts-incremental-indicators.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/procharts-incremental-indicators.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/procharts-indicators.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/procharts-indicators.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/procharts-interaction.md",
       "output": {
         ".html": {
           "relative_path": "articles/procharts-interaction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/procharts-multi-series-streaming.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/procharts-multi-series-streaming.html"
         }
       },
       "version": ""
@@ -12685,6 +13421,16 @@
       "output": {
         ".html": {
           "relative_path": "articles/procharts-performance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/procharts-range-area.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/procharts-range-area.html"
         }
       },
       "version": ""
@@ -12731,10 +13477,50 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/procharts-streaming-ranges.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/procharts-streaming-ranges.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/procharts-streaming.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/procharts-streaming.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/procharts-styling.md",
       "output": {
         ".html": {
           "relative_path": "articles/procharts-styling.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/procharts-update-delivery.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/procharts-update-delivery.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/procharts-windowing.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/procharts-windowing.html"
         }
       },
       "version": ""
